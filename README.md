@@ -1,23 +1,17 @@
-# pr-comment
+# PRNC
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
+Pull Request Number Commenter,
 
-## Setup
+a bot which comment with a pull request number according to your customized message:
 
-```sh
-# Install dependencies
-npm install
+![Example](/example.png?raw=true)
 
-# Run the bot
-npm start
+For a message customization, create a `.github/prnc.yml` config:
+
+```yml
+message: |
+  **Staging links:**
+  https://deploy-preview-[[PR]]--staging.netlify.com
 ```
-
-## Contributing
-
-If you have suggestions for how pr-comment could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
-
-## License
 
 [ISC](LICENSE) © 2019 Oles Maiboroda <oles.maiboroda@gmail.com>

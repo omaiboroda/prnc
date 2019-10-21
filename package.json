@@ -1,30 +1,26 @@
 {
-  "name": "pr-comment",
+  "name": "prnc",
   "version": "1.0.0",
-  "description": "A Probot app",
+  "description": "Pull request number comment",
   "author": "Oles Maiboroda <oles.maiboroda@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com//pr-comment.git",
-  "homepage": "https://github.com//pr-comment",
-  "bugs": "https://github.com//pr-comment/issues",
+  "repository": "https://github.com/omaiboroda/prnc.git",
+  "homepage": "https://github.com/omaiboroda/prnc",
   "keywords": [
-    "probot",
+    "pull request",
     "github",
     "probot-app"
   ],
   "scripts": {
     "dev": "nodemon",
     "start": "probot run ./index.js",
-    "lint": "standard --fix",
-    "test": "jest && standard",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+    "lint": "standard --fix"
   },
   "dependencies": {
+    "probot-serverless-now": "^2.1.1",
     "probot": "^7.2.0"
   },
   "devDependencies": {
-    "jest": "^24.0.0",
-    "nock": "^10.0.0",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.2",
     "standard": "^12.0.1"

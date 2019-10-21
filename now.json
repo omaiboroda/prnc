@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [{ "src": "now.js", "use": "@now/node" }],
+  "routes": [{ "src": "/", "dest": "/now.js" }],
+  "env": {
+    "WEBHOOK_PROXY_URL": "@webhook_proxy_url",
+    "APP_ID": "@app_id",
+    "PRIVATE_KEY": "@private_key",
+    "WEBHOOK_SECRET": "@webhook_secret"
+  }
+}
